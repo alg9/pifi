@@ -3,14 +3,10 @@
 # and this post https://iceburn.medium.com/raspberry-pi-connected-to-wifi-of-wpa2-enterprise-ddd5a40c0b07
 # and this one too https://www.raspberrypi.org/forums/viewtopic.php?t=247310
 
-# run this on a fresh install of raspbian lite
-
 read -p 'SSID: ' VAR_SSID
 read -p 'Username: ' VAR_USERNAME
 read -p 'Password: ' VAR_PASSWORD
 
-#sudo apt-get -y update
-#sudo apt-get -y upgrade
 sudo apt-get -y install dnsmasq
 
 #create wpa2 enterprise profile
@@ -74,5 +70,4 @@ fi
 
 sudo service dnsmasq start
 
-#sudo reboot
 
