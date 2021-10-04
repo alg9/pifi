@@ -18,7 +18,7 @@ country=GB
 network={
         ssid="$VAR_SSID"
         key_mgmt=WPA-EAP
-        eap=TTLS
+        eap=PEAP
         identity="$VAR_USERNAME"
         password="$VAR_PASSWORD"
         phase2="auth=MSCHAPV2"
